@@ -76,9 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
     prmts.mobileMenu.classList.toggle('is-active');
   })
 
-
-
-
   prmts.modalButtons.forEach(function(item) {
     item.addEventListener('click', function() {
       const modal = document.querySelector('#' + this.dataset.modalButton);
@@ -159,12 +156,9 @@ document.addEventListener("DOMContentLoaded", function () {
     myMap.geoObjects.add(myPlacemark);
   }
 
-
-
   new Accordion('.catalog__accordion', {
     openOnInit: [0]
   });
-
 
   var tel = document.querySelector("input[name='tel']");
   var inputMaskTel = new Inputmask("+7(999) 999-99-99");
@@ -208,7 +202,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   ]);
 
-
   const swiper1 = new Swiper('.hero__swiper', {
 
     simulateTouch: false,  // запрет на двигание мышкой
@@ -224,8 +217,6 @@ document.addEventListener("DOMContentLoaded", function () {
     theme: 'tooltip-custom',
     maxWidth: 256,
   });
-
-
 
   prmts.catalogButtons.forEach(function(item) {
     console.log(item);
@@ -269,10 +260,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
   });
+
   prmts.listSelect.addEventListener('click', function(event) {
     event.stopPropagation();
   });
-
 
   const choices = new Choices(prmts.select, {
     allowHTML: true,
@@ -286,7 +277,6 @@ document.addEventListener("DOMContentLoaded", function () {
       rows: 1,
       fill: "row"
     },
-
     pagination: {
       el: ".gallery__pagination",
       type: "fraction"
@@ -312,7 +302,6 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 34,
       }
     },
-
     a11y: false,
     keyboard: {
       enabled: true,
@@ -321,21 +310,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const swiper3 = new Swiper('.events__swiper', {
-
     grid: {
       rows: 1,
     },
-
     navigation: {
       nextEl: ".events__btn-next",
       prevEl: ".events__btn-prev"
     },
-
     pagination: {
       el: '.events__swiper-pagination',
       clickable: true,
     },
-
     breakpoints: {
       1281: {
         slidesPerView: 3,
@@ -353,29 +338,23 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 34,
       }
     },
-
     slidesPerView: 1,
     slidesPerGroup: 1,
-
     a11y: false,
     keyboard: {
       enabled: true,
       onlyInViewport: true
     },
-
   });
 
   const swiper4 = new Swiper('.projects__swiper', {
-
     grid: {
       rows: 1,
     },
-
     navigation: {
       nextEl: ".project__btn-next",
       prevEl: ".project__btn-prev"
     },
-
     breakpoints: {
       1280: {
         slidesPerView: 3,
@@ -392,12 +371,8 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerGroup: 1,
         spaceBetween: 34,
       },
-
-
     },
-
     loop: true,
-
     a11y: false,
     keyboard: {
       enabled: true,
@@ -405,7 +380,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
   });
-
 
   $(document).ready(function() {
     function heightBlock(column) {
@@ -422,9 +396,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     heightBlock($(".events__card-wrap"))
   })
-
-
-
 });
 
 

@@ -187,7 +187,6 @@
 @media (max-width: 1024px) {
   .hero__text {
     max-width: 661px;
-    padding-top: -10px;
   }
 
   .hero__text {
@@ -266,9 +265,6 @@
 }
 
 @media (max-width: 920px) {
-  .hero__mob-search-box {
-    width: 100;
-  }
 
   .hero__header-burger.remove {
     width: 0;
