@@ -1,7 +1,6 @@
 @media (max-width: 1620px) {
   .container {
-    max-width: 1500px;
-    margin: 0 60px;
+    width: calc(100% - 140px);
   }
 
   .hero__items:not(:last-child) {
@@ -31,8 +30,7 @@
 
 @media (max-width: 1280px) {
   .container {
-    max-width: 1180px;
-    margin: 0 50px;
+    width: calc(100% - 100px);
   }
 
   .hero__header-list {
@@ -48,10 +46,6 @@
     display: none;
   }
 
-  .hero__header-burger {
-    display: block;
-  }
-
   .hero__header-logo {
     margin-right: 0;
   }
@@ -62,8 +56,9 @@
   }
 
   .hero__header-burger {
+    display: block;
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -80,7 +75,7 @@
   .hero__mob-search-box {
     display: block;
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -275,7 +270,7 @@
   }
 
   .hero__mob-search-box.is-active {
-    width: calc(100% - 86px);
+    width: calc(100% - 120px);
   }
 
   .hero__header-burger.remove .hero__header-burger-icon,
@@ -358,9 +353,6 @@
   .projects__slide-link {
     height: 104px;
   }
-
-
-
 }
 
 @media (max-width: 768px) {
@@ -409,8 +401,7 @@
 
 @media (max-width: 620px) {
   .container {
-    max-width: 590px;
-    margin: 0 15px;
+    width: calc(100% - 30px);
   }
 
 
@@ -559,7 +550,7 @@
   }
 
   .hero__mob-search-box.is-active {
-    width: calc(100% - 56px);
+    width: calc(100% - 90px);
     padding-right: 28px;
   }
 
@@ -587,6 +578,10 @@
     width: 20px;
     height: 20px;
     left: -18px;
+  }
+
+  .hero__mob-search-btn.is-active {
+    transform: translateX(19px);
   }
 
   .hero__mob-search-box svg {

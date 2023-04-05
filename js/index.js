@@ -225,7 +225,11 @@ document.addEventListener("DOMContentLoaded", function () {
         i.classList.remove('is-active');
       })
       const catalogInfo = document.querySelector('#' + this.dataset.trigger);
-      catalogInfo.classList.add('is-active')
+      catalogInfo.classList.add('is-active');
+      $(catalogInfo)[0].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     })
   })
 

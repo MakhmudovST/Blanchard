@@ -55,7 +55,6 @@ img {
 
 body {
   font-family: 'OpenSans', sans-serif;
-  max-width: 1920px;
   font-weight: 400;
   margin-left: 0;
   margin-right: 0;
@@ -63,8 +62,10 @@ body {
 }
 
 .container {
-  max-width: 1600px;
-  margin: 0 160px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: calc(100% - 320px);
 }
 
 .list-reset {
@@ -803,6 +804,7 @@ body {
 .hero__mob-search-box.is-active {
   width: 218px;
   padding-right: 45px;
+  padding-left: 34px;
 }
 
 .hero__mob-search-text {
@@ -842,8 +844,7 @@ body {
 }
 
 .hero__mob-search-btn.is-active {
-  transform: translateX(-12px);
-
+  transform: translateX(18px);
 }
 
 .hero__mob-search-close {
@@ -863,39 +864,6 @@ body {
   opacity: 1;
   transform: rotate(360deg);
 }
-
-
-.hero__mob-search-close span {
-  position: relative;
-}
-
-.hero__mob-search-close span::before {
-  position: absolute;
-  content: '';
-  left: -16px;
-  bottom: -1px;
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  transform: rotate(-45deg);
-}
-
-.hero__mob-search-close span::after {
-  position: absolute;
-  content: '';
-  left: -16px;
-  top: -2px;
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  transform: rotate(45deg);
-}
-
-
-
-
 
 /* about-us */
 
